@@ -27,3 +27,7 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path('api/', include(router.urls))
 ]
+
+"""/albums/ - returns a list of all the Todo items. CREATE and READ operations can be performed here.
+/albums/id - returns a single Todo item using the id primary key. UPDATE and DELETE operations can be performed here.
+"""
