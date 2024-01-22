@@ -25,9 +25,11 @@ router.register(r'albums', views.AlbumView, 'album')
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path('api/', include(router.urls))
+    path('api/', include(router.urls)),
+    path('search', views.search_disco)
 ]
 
-"""/albums/ - returns a list of all the Todo items. CREATE and READ operations can be performed here.
+"""
+/albums/ - returns a list of all the Todo items. CREATE and READ operations can be performed here.
 /albums/id - returns a single Todo item using the id primary key. UPDATE and DELETE operations can be performed here.
 """
